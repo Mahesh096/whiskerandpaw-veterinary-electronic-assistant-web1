@@ -1,0 +1,83 @@
+#app-sidebar {
+  background-color: #fff;
+  box-shadow: 4px 0px 18px rgba(0, 0, 0, 0.07);
+  position: fixed;
+  z-index: 2;
+
+  .profile-container {
+    background: rgba(178, 235, 214, 0.19);
+    padding: 30px 19px;
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background-color: #1a1718;
+      color: #fff;
+      border-radius: 50%;
+    }
+
+    .info-container {
+      margin-left: 30px;
+      .profile-name {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #6b6b6b;
+      }
+
+      .profile-role {
+        background: rgba(26, 23, 24, 0.69);
+        color: #fff;
+        padding: 5px 8px;
+        font-size: 0.75rem;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .logo-container {
+    height: 60px;
+    padding: 10px;
+    border-bottom: 2px solid #ececec;
+
+    img {
+      width: 60px;
+    }
+  }
+
+  .sider-menu-container {
+    color: #b0b0b0;
+    border: none;
+    overflow-x: hidden;
+    height: calc(100vh - 252px);
+  }
+
+  .ant-menu {
+    &-item,
+    &-submenu-title {
+      height: 51px;
+      line-height: 51px;
+      font-size: 17px;
+      .anticon {
+        font-size: 17px;
+      }
+    }
+
+    &-sub {
+      .ant-menu-item {
+        height: 35px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .signout-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+  }
+}

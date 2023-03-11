@@ -1,0 +1,14 @@
+{
+  "rules": {
+    // "semi": [2, "always"]
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 11
+  }
+}

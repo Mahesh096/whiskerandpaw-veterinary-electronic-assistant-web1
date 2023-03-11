@@ -1,0 +1,33 @@
+#data-table {
+
+ min-height: 100vh;
+
+ .ant-card {
+   border-radius: 13px;
+ }
+
+  .header-elements-container {
+    display: flex;
+    justify-content: space-between;
+
+    .default-elements {
+      display: flex;
+    }
+  }
+
+  .ant-table {
+    &-thead {
+      > tr > th {
+        background: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+    }
+
+    &-tbody {
+        > tr > td {
+            padding: 11px 16px;
+        }
+    }
+  }
+}

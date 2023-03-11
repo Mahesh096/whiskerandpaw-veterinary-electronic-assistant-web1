@@ -1,0 +1,88 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@craco/craco": "^5.7.0",
+    "@react-pdf/font": "2.2.0",
+    "@react-pdf/renderer": "^2.1.1",
+    "@stripe/react-stripe-js": "^1.7.0",
+    "@stripe/stripe-js": "^1.24.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.4",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "antd": "4.21.3",
+    "axios": "^0.21.0",
+    "craco-antd": "^1.19.0",
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.12.1",
+    "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.0",
+    "jwt-decode": "^3.1.2",
+    "lint-staged": "^10.5.0",
+    "moment": "^2.29.3",
+    "prettier": "^2.1.2",
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^3.0.5",
+    "react-dom": "^18.2.0",
+    "react-google-autocomplete": "^2.6.1",
+    "react-phone-number-input": "^3.1.47",
+    "react-query": "^3.5.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "react-signature-canvas": "^1.0.3",
+    "react-speech-recognition": "^3.8.2",
+    "web-vitals": "^0.2.4",
+    "zustand": "^4.3.6"
+  },
+  "resolutions": {
+    "@react-pdf/font": "2.2.1",
+    "@react-pdf/pdfkit": "2.1.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "build:qa": "craco -f .env.qa npm run build",
+    "build:prod": "craco -f .env.prod npm run build",
+    "build:staging": "craco -f .env.staging npm run build"
+  },
+  "browser": {
+    "http": false
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
